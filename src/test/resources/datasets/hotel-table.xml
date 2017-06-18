@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <hotels id="100000" name="HOTEL_NAME_1" capacity="350"/>
+    <hotels id="100001" name="HOTEL_NAME_2" capacity="450"/>
+    <hotels id="100002" name="HOTEL_NAME_3" capacity="550"/>
+</dataset>
