@@ -1,0 +1,12 @@
+
+http://localhost:8080/PinService/pins/add
+
+{
+"api_token":"asdasd",
+"operation_id":"sadasd",
+"email":"pi-ls@mail.ru"
+}
+
+
+http://localhost:8080/PinService/pins/asdasd2/check
+code
