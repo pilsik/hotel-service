@@ -1,12 +1,13 @@
-package by.ivkos.kotlin.hotelService.service
+package by.ivkos.kotlin.pin_service.service
 
-import by.ivkos.kotlin.hotelService.dao.pin.PinDao
-import by.ivkos.kotlin.hotelService.domain.Pin
+import by.ivkos.kotlin.pin_service.dao.pin.PinDao
+import by.ivkos.kotlin.pin_service.domain.Pin
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Service
 
 @Service
-class PinServiceImpl: PinService {
+class PinServiceImpl : PinService {
 
     @Autowired
     lateinit var pinDao: PinDao
@@ -26,4 +27,5 @@ class PinServiceImpl: PinService {
     override fun getPinByApiToken(api_token: String): Pin {
         return pinDao.getPinByApiToken(api_token)
     }
+
 }

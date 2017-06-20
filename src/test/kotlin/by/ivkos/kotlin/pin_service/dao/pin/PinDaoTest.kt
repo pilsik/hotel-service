@@ -1,7 +1,7 @@
-package by.ivkos.kotlin.hotelService.dao.pin
+package by.ivkos.kotlin.pin_service.dao.pin
 
-import by.ivkos.kotlin.hotelService.dao.AbstractDaoAnnotationIncludeTest
-import by.ivkos.kotlin.hotelService.domain.Pin
+import by.ivkos.kotlin.pin_service.dao.AbstractDaoAnnotationIncludeTest
+import by.ivkos.kotlin.pin_service.domain.Pin
 import com.github.springtestdbunit.annotation.DatabaseOperation
 import com.github.springtestdbunit.annotation.DatabaseSetup
 import com.github.springtestdbunit.annotation.DatabaseTearDown
@@ -37,7 +37,7 @@ open class PinDaoTest : AbstractDaoAnnotationIncludeTest() {
     companion object {
         const val DATASET = "classpath:datasets/pin-table.xml"
         private val PIN_ID_1: Long = 100000
-        private val PIN_CODE_1: Long = 123123
+        private val PIN_CODE_1: Int = 123123
         private val PIN_EMAIL_1: String = "EMAIL_1"
         private val API_TOKEN_1: String = "API_TOKEN_1"
         private val API_TOKEN_2: String = "API_TOKEN_2"

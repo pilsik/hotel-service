@@ -1,4 +1,4 @@
-package by.ivkos.kotlin.hotelService.domain
+package by.ivkos.kotlin.pin_service.domain
 
 import javax.persistence.*
 
@@ -12,5 +12,6 @@ data class Pin(
         var api_token: String = "",
         var operation_id: String = "",
         var email: String = "",
-        var code: Long = 0)
+        var code: Int = 0,
+        var timestamp: Long = System.currentTimeMillis())
 

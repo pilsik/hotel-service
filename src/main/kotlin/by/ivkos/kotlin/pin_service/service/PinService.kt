@@ -1,6 +1,6 @@
-package by.ivkos.kotlin.hotelService.service
+package by.ivkos.kotlin.pin_service.service
 
-import by.ivkos.kotlin.hotelService.domain.Pin
+import by.ivkos.kotlin.pin_service.domain.Pin
 
 interface PinService {
 

@@ -1,6 +1,6 @@
-package by.ivkos.kotlin.hotelService.dao
+package by.ivkos.kotlin.pin_service.dao
 
-import by.ivkos.kotlin.hotelService.HotelServiceApplication
+import by.ivkos.kotlin.pin_service.HotelServiceApplication
 import com.github.springtestdbunit.DbUnitTestExecutionListener
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.annotation.DirtiesContext

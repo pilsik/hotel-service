@@ -1,4 +1,4 @@
-package by.ivkos.kotlin.hotelService.dao
+package by.ivkos.kotlin.pin_service.dao
 
 import java.io.Serializable
 import java.lang.reflect.ParameterizedType
@@ -38,4 +38,7 @@ open class GenericDaoImpl<T, in PK : Serializable> : GenericDao<T, PK> {
         return t
     }
 
+    override fun removeEntity(entity: T) {
+        this.em.remove(entity)
+    }
 }
