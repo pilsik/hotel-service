@@ -33,6 +33,7 @@ open class PinDaoTest : AbstractDaoAnnotationIncludeTest() {
         assertThat(pin.id_pin, `is`(PIN_ID_2))
     }
 
+
     companion object {
         const val DATASET = "classpath:datasets/pin-table.xml"
         private val PIN_ID_1: Long = 100000

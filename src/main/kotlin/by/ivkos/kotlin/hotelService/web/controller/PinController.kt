@@ -22,7 +22,7 @@ open class PinController {
     }
 
     @RequestMapping(value = "/{api_token}/check", method = arrayOf(RequestMethod.POST))
-    open fun checkPin(@PathVariable api_token: String, @RequestBody code: Long): String {
+    open fun checkPin(@PathVariable api_token: String, @RequestHeader code: Long): String {
         var pin: Pin? = pinService.getPinByApiToken(api_token)
         if (pin?.code!!.equals(code)) {
             return "success"
