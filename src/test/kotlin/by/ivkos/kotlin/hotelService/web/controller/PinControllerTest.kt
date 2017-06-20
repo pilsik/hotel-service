@@ -16,13 +16,13 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders
 @RunWith(SpringJUnit4ClassRunner::class)
 @SpringBootTest(classes = arrayOf(HotelServiceApplication::class))
 @WebAppConfiguration
-class HotelControllerTest {
+class PinControllerTest {
 
     lateinit var mockMvc: MockMvc
 
     @Autowired
     @InjectMocks
-    lateinit var controller: HotelController
+    lateinit var controller: PinController
 
     @Before
     fun setup(){
